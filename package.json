@@ -1,7 +1,7 @@
 {
   "name": "translate-cli",
   "version": "0.0.1",
-  "description": "translate-cli CLI",
+  "description": "Translate text programmatically from one language into another language in command line",
   "private": true,
   "bin": {
     "translate": "bin/translate"
@@ -24,13 +24,13 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.0.0",
-    "gluegun": "^2.1.0",
+    "gluegun": "^3.3.2",
     "ibm-watson": "^4.2.2"
   },
   "devDependencies": {
-    "standard": "^12.0.1",
+    "jest": "^24.8.0",
     "prettier": "^1.12.1",
-    "jest": "^23.6.0"
+    "standard": "^12.0.1"
   },
   "jest": {
     "testEnvironment": "node"
