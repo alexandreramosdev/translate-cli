@@ -1,0 +1,61 @@
+{
+  "name": "translate-cli",
+  "version": "0.0.1",
+  "description": "translate-cli CLI",
+  "private": true,
+  "bin": {
+    "translate": "bin/translate"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.{js,json} && standard --fix",
+    "lint": "standard",
+    "test": "jest",
+    "watch": "jest --watch",
+    "snapupdate": "jest --updateSnapshot",
+    "coverage": "jest --coverage"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "readme.md",
+    "docs",
+    "bin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "gluegun": "^2.1.0",
+    "ibm-watson": "^4.2.2"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "prettier": "^1.12.1",
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandreramosdev/translate-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/alexandreramosdev/translate-cli/issues"
+  },
+  "homepage": "https://github.com/alexandreramosdev/translate-cli#readme"
+}
