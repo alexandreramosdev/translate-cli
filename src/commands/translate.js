@@ -2,14 +2,13 @@ module.exports = {
   name: 'translate',
   alias: ['trans'],
   run: async toolbox => {
-    require('dotenv').config()
+    const credential = require('../../credentials/language-translator.json')
     const TranslatorV3 = require('ibm-watson/language-translator/v3')
     const translator = new TranslatorV3({
-      iam_apikey: process.env.API_KEY,
-      url: 'https://gateway-syd.watsonplatform.net/language-translator/api/',
-      version: '2018-05-01'
+      iam_apikey: credential.iam_apikey,
+      url: credential.url,
+      version: credential.version
     })
-
     const { print, parameters } = toolbox
 
     translator.translate(

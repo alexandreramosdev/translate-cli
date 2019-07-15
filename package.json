@@ -23,7 +23,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^8.0.0",
     "gluegun": "^3.3.2",
     "ibm-watson": "^4.2.2"
   },
